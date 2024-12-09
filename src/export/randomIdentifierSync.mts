@@ -3,8 +3,10 @@ export function randomIdentifierSync(length: number) {
 	let bytes = []
 
 	if (typeof crypto === "object" && typeof crypto.getRandomValues === "function") {
+		// @ts-ignore:next-line
 		bytes = new Uint8Array(length)
 
+		// @ts-ignore:next-line
 		crypto.getRandomValues(bytes)
 	} else {
 		for (let i = 0; i < length; ++i) {
