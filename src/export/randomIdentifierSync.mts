@@ -1,4 +1,4 @@
-export default function createRandomIdentifier(len) {
+export function randomIdentifierSync(len) {
 	let str = ""
 	let bytes = []
 
@@ -19,7 +19,7 @@ export default function createRandomIdentifier(len) {
 
 	// sanity check output
 	if (str.length !== len) {
-		throw new Error(`createRandomIdentifier(${len}) failed for unknown reasons.`)
+		throw new Error(`randomIdentifierSync(${len}) failed for unknown reasons.`)
 	}
 
 	return str
