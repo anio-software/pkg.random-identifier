@@ -1,6 +1,6 @@
 import {useContext, type RuntimeWrappedContextInstance} from "@fourtune/realm-js/runtime"
 
-export function randomIdentifierSync(
+export function implementation(
 	wrapped_context: RuntimeWrappedContextInstance,
 	length: number
 ) : string {
