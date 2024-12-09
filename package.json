@@ -24,6 +24,6 @@
     "prepare": "./node_modules/.bin/fourtune ."
   },
   "files": [
-    "./dist/package.mjs"
+    "./dist/"
   ]
 }
