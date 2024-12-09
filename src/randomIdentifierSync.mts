@@ -1,8 +1,15 @@
+import {useContext, type RuntimeWrappedContextInstance} from "@fourtune/realm-js/runtime"
+
 export function randomIdentifierSync(
+	wrapped_context: RuntimeWrappedContextInstance,
 	length: number
 ) : string {
+	const context = useContext(wrapped_context, 0)
+
 	let str = ""
 	let bytes = []
+
+	context.log.trace(`generating ${length} random bytes`)
 
 	if (typeof crypto === "object" && typeof crypto.getRandomValues === "function") {
 		// @ts-ignore:next-line
