@@ -14,5 +14,10 @@
   },
   "files": [
     "./dist/package.mjs"
-  ]
+  ],
+  "devDependencies": {
+    "@fourtune/core": "^0.1101.0",
+    "@fourtune/realm-js": "^0.31000.2",
+    "fourtune": "^0.30000.0"
+  }
 }
