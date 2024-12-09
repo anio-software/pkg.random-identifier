@@ -9,9 +9,6 @@
     "type": "git",
     "url": "git+https://github.com/anio-js-foundation/create-random-identifier.git"
   },
-  "devDependencies": {
-    "@anio-software/npm-package-bundler": "^1.0.0"
-  },
   "scripts": {
     "prepare": "./node_modules/.bin/npm-package-bundler ."
   },
