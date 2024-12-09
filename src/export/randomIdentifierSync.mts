@@ -1,4 +1,6 @@
-export function randomIdentifierSync(length: number) {
+export function randomIdentifierSync(
+	length: number
+) : string {
 	let str = ""
 	let bytes = []
 
