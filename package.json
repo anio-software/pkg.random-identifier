@@ -10,7 +10,7 @@
     "url": "git+https://github.com/anio-js-foundation/create-random-identifier.git"
   },
   "scripts": {
-    "prepare": "./node_modules/.bin/npm-package-bundler ."
+    "prepare": "./node_modules/.bin/fourtune ."
   },
   "files": [
     "./dist/package.mjs"
