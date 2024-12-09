@@ -1,9 +1,9 @@
-# @anio-js-foundation/create-random-identifier
+# @aniojs/random-ident
 
 Attempts to create a random identifier of any length using the Crypto API `crypto.getRandomValues`, falling back to `Math.random`.
 
 ```js
-import createRandomIdentifier from "@anio-js-foundation/create-random-identifier"
+import createRandomIdentifier from "@aniojs/random-ident"
 
 const identifier = createRandomIdentifier(16) // create a random identifier of length 16
 
