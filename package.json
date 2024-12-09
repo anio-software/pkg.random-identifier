@@ -18,6 +18,5 @@
   },
   "files": [
     "./dist/package.mjs"
-  ],
-  "main": "./dist/package.mjs"
+  ]
 }
