@@ -12,13 +12,15 @@ export function __implementation(
 	let str = ""
 	let bytes: Uint8Array|number[] = []
 
-	context.log.trace(`generating ${length} random bytes`)
-
 	if (typeof crypto === "object" && typeof crypto.getRandomValues === "function") {
+		context.log.trace(`generating ${length} random bytes using crypto API`)
+
 		bytes = new Uint8Array(length)
 
 		crypto.getRandomValues(bytes)
 	} else {
+		context.log.warn(`generating ${length} random bytes using Math.random()!`)
+
 		for (let i = 0; i < length; ++i) {
 			// will never exceed 255
 			bytes.push(Math.floor(Math.random() * 256))
