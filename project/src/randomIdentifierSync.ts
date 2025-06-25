@@ -10,15 +10,13 @@ export function __implementation(
 	const context = createContext(contextOptions, 0)
 
 	let str = ""
-	let bytes = []
+	let bytes: Uint8Array|number[] = []
 
 	context.log.trace(`generating ${length} random bytes`)
 
 	if (typeof crypto === "object" && typeof crypto.getRandomValues === "function") {
-		// @ts-ignore:next-line
 		bytes = new Uint8Array(length)
 
-		// @ts-ignore:next-line
 		crypto.getRandomValues(bytes)
 	} else {
 		for (let i = 0; i < length; ++i) {
