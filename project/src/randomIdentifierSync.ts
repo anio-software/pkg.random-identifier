@@ -31,7 +31,7 @@ export function __implementation(
 
 	// sanity check output
 	if (str.length !== length) {
-		throw new Error(`randomIdentifierSync(${length}) failed for unknown reasons.`)
+		throw new Error(`randomIdentifierSync(${length}) failed for unknown reasons (${str.length} !== ${length}).`)
 	}
 
 	return str
