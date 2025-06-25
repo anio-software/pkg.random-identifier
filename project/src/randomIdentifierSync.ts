@@ -1,10 +1,13 @@
-import {useContext, type RuntimeWrappedContextInstance} from "@fourtune/realm-js/runtime"
+import {
+	type EnkoreJSRuntimeContextOptions,
+	createContext
+} from "@anio-software/enkore.js-runtime"
 
 export function implementation(
-	wrapped_context: RuntimeWrappedContextInstance,
+	wrapped_context: EnkoreJSRuntimeContextOptions,
 	length: number
 ) : string {
-	const context = useContext(wrapped_context, 0)
+	const context = createContext(wrapped_context, 0)
 
 	let str = ""
 	let bytes = []
