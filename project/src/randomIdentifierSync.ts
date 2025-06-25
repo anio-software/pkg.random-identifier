@@ -3,7 +3,7 @@ import {
 	createContext
 } from "@anio-software/enkore.js-runtime"
 
-export function implementation(
+export function __implementation(
 	contextOptions: EnkoreJSRuntimeContextOptions,
 	length: number
 ) : string {
