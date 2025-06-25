@@ -4,10 +4,10 @@ import {
 } from "@anio-software/enkore.js-runtime"
 
 export function implementation(
-	wrapped_context: EnkoreJSRuntimeContextOptions,
+	contextOptions: EnkoreJSRuntimeContextOptions,
 	length: number
 ) : string {
-	const context = createContext(wrapped_context, 0)
+	const context = createContext(contextOptions, 0)
 
 	let str = ""
 	let bytes = []
